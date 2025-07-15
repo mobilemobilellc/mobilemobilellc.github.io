@@ -1,0 +1,55 @@
+<svg width="150" height="150" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+        <!-- Define the bisexual lighting linear gradient -->
+        <linearGradient id="bisexualGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#D60270" />    <!-- Pink -->
+            <stop offset="50%" stop-color="#9B4F96" />   <!-- Purple -->
+            <stop offset="100%" stop-color="#0038A8" />  <!-- Blue -->
+        </linearGradient>
+
+        <!-- Filter to simulate text-shadow effect (dx=4, dy=4, blur-radius=10 -> stdDeviation=5) -->
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+            <feOffset dx="4" dy="4"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.4"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Background rectangle with the bisexual lighting gradient fill and rounded corners -->
+    <rect x="0" y="0" width="100" height="100" rx="25" ry="25" fill="url(#bisexualGradient)"/>
+
+    <!-- Background 'M' - slightly larger and more transparent -->
+    <text
+        x="50"
+        y="50"
+        font-family="Inter, sans-serif"
+        font-weight="1000"
+        font-size="62.64"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        fill="#FFFFFF"
+        opacity="0.8"
+        filter="url(#shadow)"
+    >M</text>
+
+    <!-- Foreground 'M' - slightly smaller and fully opaque -->
+    <text
+        x="50"
+        y="50"
+        font-family="Inter, sans-serif"
+        font-weight="1000"
+        font-size="53.36"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        fill="#FFFFFF"
+        opacity="1"
+        filter="url(#shadow)"
+    >M</text>
+</svg>
