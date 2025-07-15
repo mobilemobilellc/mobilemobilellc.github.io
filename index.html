@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileMobile LLC - Android Development Experts</title>
+    <!-- Load Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean, modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom gradient for the expressive button */
+        .expressive-button {
+            background-image: linear-gradient(to right, #4F46E5, #6366F1, #818CF8); /* Indigo shades for a vibrant feel */
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.5), 0 4px 6px -2px rgba(79, 70, 229, 0.25); /* More pronounced shadow */
+        }
+        .expressive-button:hover {
+            background-image: linear-gradient(to right, #6366F1, #818CF8, #A5B4FC); /* Lighter gradient on hover */
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen flex items-center justify-center p-4">
+    <div class="text-center space-y-10 md:space-y-12"> <!-- Increased vertical spacing for expressiveness -->
+        <!-- MobileMobile LLC Logo Placeholder -->
+        <img
+            src="images/logo.svg"
+            alt="MobileMobile LLC"
+            class="mx-auto rounded-xl shadow-2xl max-w-full h-auto transform transition-transform duration-300 hover:scale-105"
+            onerror="this.onerror=null;this.src='https://placehold.co/350x175/000000/FFFFFF?text=Logo+Not+Found';"
+        />
+        <!-- Main heading for the company - Larger and bolder for impact -->
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-tight">
+            MobileMobile LLC
+        </h1>
+        <!-- Tagline highlighting our expertise - Slightly larger and more prominent -->
+        <p class="text-xl sm:text-2xl md:text-3xl text-gray-200 max-w-3xl mx-auto font-medium">
+            Your Go-To for Expert Android App Development
+        </p>
+        <!-- Contact Link - Expressive button style -->
+        <a
+            href="mailto:contact@mobilemobile.app"
+            class="inline-block expressive-button text-white font-bold py-4 px-10 rounded-full transition duration-300 ease-in-out transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-75 text-lg"
+        >
+            Connect With Us
+        </a>
+    </div>
+</body>
+</html>
